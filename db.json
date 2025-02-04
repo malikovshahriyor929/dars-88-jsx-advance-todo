@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Smartphone X Pro",
+      "status": "Active",
+      "price": 999,
+      "total_sales": 150,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQIdu5wAGlEglfbG2XeJElzn7l6h_tLxpsUC5mjyoi_DS3iDY6NqXV2ZfGT9lV5vgpvo0&usqp=CAU"
+    },
+    {
+      "id": "2",
+      "name": "Wireless Earbuds Ultra",
+      "status": "Active",
+      "price": 199,
+      "total_sales": 300,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQIdu5wAGlEglfbG2XeJElzn7l6h_tLxpsUC5mjyoi_DS3iDY6NqXV2ZfGT9lV5vgpvo0&usqp=CAU"
+    },
+    {
+      "id": "3",
+      "name": "Smart Home Hub",
+      "status": "Active",
+      "price": 149,
+      "total_sales": 200,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQIdu5wAGlEglfbG2XeJElzn7l6h_tLxpsUC5mjyoi_DS3iDY6NqXV2ZfGT9lV5vgpvo0&usqp=CAU"
+    },
+    {
+      "id": "4",
+      "name": "4K Ultra HD Smart TV",
+      "status": "Active",
+      "price": 799,
+      "total_sales": 50,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQIdu5wAGlEglfbG2XeJElzn7l6h_tLxpsUC5mjyoi_DS3iDY6NqXV2ZfGT9lV5vgpvo0&usqp=CAU"
+    },
+    {
+      "id": "5",
+      "name": "Gaming Laptop Pro",
+      "status": "Active",
+      "price": 1299,
+      "total_sales": 75,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQIdu5wAGlEglfbG2XeJElzn7l6h_tLxpsUC5mjyoi_DS3iDY6NqXV2ZfGT9lV5vgpvo0&usqp=CAU"
+    },
+    {
+      "id": "8bd3",
+      "name": "sdfsd",
+      "price": "sdfsdf",
+      "active": "sdfdsf",
+      "total_sales": 150,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQIdu5wAGlEglfbG2XeJElzn7l6h_tLxpsUC5mjyoi_DS3iDY6NqXV2ZfGT9lV5vgpvo0&usqp=CAU"
+    },
+    {
+      "id": "cd6e",
+      "name": "sdf",
+      "price": "sdfsdfs",
+      "status": "dfsdf",
+      "total_sales": 0,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQIdu5wAGlEglfbG2XeJElzn7l6h_tLxpsUC5mjyoi_DS3iDY6NqXV2ZfGT9lV5vgpvo0&usqp=CAU"
+    },
+    {
+      "id": "053d",
+      "name": "fdg",
+      "price": "dgfgdfg",
+      "status": "dfgdfg",
+      "total_sales": 0,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQIdu5wAGlEglfbG2XeJElzn7l6h_tLxpsUC5mjyoi_DS3iDY6NqXV2ZfGT9lV5vgpvo0&usqp=CAU"
+    },
+    {
+      "id": "19aa",
+      "name": "zdcdsfs",
+      "price": "sdfsdf",
+      "status": "20000",
+      "total_sales": 0,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQIdu5wAGlEglfbG2XeJElzn7l6h_tLxpsUC5mjyoi_DS3iDY6NqXV2ZfGT9lV5vgpvo0&usqp=CAU"
+    },
+    {
+      "id": "4087",
+      "name": "cfgfd",
+      "price": "gfdgdfg",
+      "status": "fdgdf",
+      "total_sales": 0,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQIdu5wAGlEglfbG2XeJElzn7l6h_tLxpsUC5mjyoi_DS3iDY6NqXV2ZfGT9lV5vgpvo0&usqp=CAU"
+    }
+  ]
+}
