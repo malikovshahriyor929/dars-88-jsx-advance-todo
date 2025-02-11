@@ -1,10 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 
 import { NavLink, Outlet } from "react-router-dom";
 
 import { IoMdAddCircleOutline } from "react-icons/io";
+import { ComponentContext } from "../../components/context";
 
 const ProductPage = () => {
+  let { data, setData } = useContext(ComponentContext);
   let [addInput, setAddInput] = useState(false);
   let nameRef = useRef();
   let priceRef = useRef();
@@ -31,22 +33,11 @@ const ProductPage = () => {
         }),
       })
         .then((res) => res.json())
-        .then((data) => (data));
-      //   let newData = axios.post("http://localhost:5000/products", {
-      //     name: nameRef.current.value,
-      //     price: priceRef.current.value,
-      //     active: activeRef.current.value,
-      //     total_sales: 150,
-      //     image:
-      //       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQIdu5wAGlEglfbG2XeJElzn7l6h_tLxpsUC5mjyoi_DS3iDY6NqXV2ZfGT9lV5vgpvo0&usqp=CAU",
-      //   });
-      //   console.log(newData);
+        .then((res) => {
+          setData([ ...data, res ])
+        });
     }
-
   };
-  //   useEffect(()=>{
-  //     FetchFunc()
-  //   },[finish])
 
   return (
     <div className="py-7">
@@ -63,7 +54,7 @@ const ProductPage = () => {
           onClick={() => {
             setAddInput(true);
           }}
-          className="text-white bg-black  px-3 py-1 rounded-md w-fit  flex items-center gap-1"
+          className="text-white cursor-pointer bg-black  px-3 py-1 rounded-md w-fit  flex items-center gap-1"
         >
           <IoMdAddCircleOutline />
           add to Product
@@ -104,7 +95,14 @@ const ProductPage = () => {
             </div>
 
             <div className="p-4">0</div>
-            <button className="p-4 bg-amber-400 flex items-center justify-center text-[20px] font-medium">
+            <button
+              onClick={() => {
+                setTimeout(() => {
+                  setAddInput(false);
+                }, 500);
+              }}
+              className="p-4 bg-amber-400 flex items-center justify-center text-[20px] font-medium"
+            >
               save
             </button>
           </form>

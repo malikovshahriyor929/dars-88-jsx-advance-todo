@@ -1,16 +1,19 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { ComponentContext } from "../../../components/context";
 
 const ProductPages = () => {
-  let [data, setData] = useState([]);
+  // let [data, setData] = useState([]);
+  // let [url, setUrl] = useState("http://localhost:5000/products");
+  // let FetchFunc = async () => {
+  //   let newData = await axios({ url });
+  //   setData(newData.data);
+  // };
+  // useEffect(() => {
+  //   FetchFunc();
+  // }, [url]);
 
-  let FetchFunc = async () => {
-    let newData = await axios({ url: "http://localhost:5000/products" });
-    setData(newData.data);
-  };
-  useEffect(() => {
-    FetchFunc();
-  }, []);
+  let { data } = useContext(ComponentContext);
   const getCurrentDateTime = () => {
     const now = new Date();
 
@@ -20,12 +23,14 @@ const ProductPages = () => {
 
     return `${year}-${month}-${day}`;
   };
+  console.log(data);
+  
 
   return (
     <div>
       <div className="px-3">
         <h1 className="text-2xl font-bold mb-4">Product List</h1>
-        
+
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
           <table className="w-full text-left border-collapse">
             <thead>
